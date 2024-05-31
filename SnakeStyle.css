@@ -1,0 +1,42 @@
+/*
+Alice Lee, PD 7 (2/23/22)
+“On my honor as a student, I have neither given nor received any unauthorized aid on this assignment.”
+*/
+
+body{
+    background-color: teal;
+    text-align: center;
+}
+
+canvas{
+    background-color: green;
+    
+}
+
+#container{    /*Display set up*/
+    grid-template: 1fr 4fr 1fr/1fr 1fr; /* Rows / colums */
+    width: 500px;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+#title{
+    grid-area: 1/1/span 1/span 2;   /*Separates content into two boxes*/
+    font-size: 30px; 
+}
+
+#buttonArea{
+    grid-area: 3/1/span 1/span 1;
+}
+
+#canvasArea{
+    grid-area: 2/1/span 1/span 2;
+}
+
+#score{
+    grid-area: 3/2/span 1/span 1;
+    justify-self: center;
+    font-size: 22px;
+}
